@@ -1,0 +1,224 @@
+\\Names & Models
+
+
+name   "nick"
+model   "gman"
+_______________
+////[ALIAS/SCRIPTS]////
+
+//movement scripts
+
+
+alias "+mfwd" "-back;+forward;alias checkfwd +forward"
+alias "+mback" "-forward;+back;alias checkback +back"
+alias "+mleft" "-moveright;+moveleft;alias checkleft +moveleft"
+alias "+mright" "-moveleft;+moveright;alias checkright +moveright"
+alias "-mfwd" "-forward;checkback;alias checkfwd none"
+alias "-mback" "-back;checkfwd;alias checkback none"
+alias "-mleft" "-moveleft;checkright;alias checkleft none"
+alias "-mright" "-moveright;checkleft;alias checkright none"
+alias "checkfwd" "none"
+alias "checkback" "none"
+alias "checkleft" "none"
+alias "checkright" "none"
+alias "none" ""
+
+bind "MOUSE4" "+d"
+alias "+d" "+duck;wait;-duck;wait;+duck"
+alias "-d" "-duck"
+alias "+box" "+duck;wait;-duck;wait;+duck"
+alias "-box" "-duck"
+
+// DuckRoll script
+
+alias +duckroll "alias _zpecial duckroll;duckroll"
+alias -duckroll "alias _zpecial"
+alias duckroll "+duck;wait;-duck;wait;special"
+bind "mwheeldown" "+duckroll"
+bind "mwheelup" "+duckroll"
+alias "+walk" "+speed;cl_forwardspeed 400;cl_sidespeed 400;cl_backspeed 400"
+alias "-walk" "-speed;cl_forwardspeed 500;cl_sidespeed 500;cl_backspeed 500"
+alias "+realnames" "loadauthid;+showscores"
+alias "-realnames" "unloadauthid;-showscores"
+
+// DOUBLE-DUCK SCRIPT
+alias +dd "-duck;wait;+duck;wait;-duck;wait;+duck"
+alias -dd -duck
+bind "MOUSE3" "+dd"
+
+
+alias fastzoom "+attack2;+attack;wait;wait;wait;wait;lastinv;lastinv;-attack;-attack2"
+bind mouse3 fastzoom
+
+
+//[BINDS]
+
+//_______________
+/////////////////
+//general binds//
+/////////////////
+
+bind	"w"		"+mfwd"
+bind	"s"		"+mback"
+bind	"a"		"+mleft"
+bind	"d"		"+mright"
+bind "e"          "+use" 
+bind 	"CTRL" 		"+duck"
+bind    "SHIFT"                  "+speed"
+bind	"r"		        "+reload"
+//______________
+////////////////
+//weapon binds//
+////////////////
+
+bind	"n"		"weapon_gauss"
+bind	"b"		"weapon_rpg"
+bind	"v"	"weapon_crossbow"
+bind	"f"		"weapon_shotgun"
+bind	"z"		"weapon_egon"
+bind	"3"		"weapon_satchel"
+bind	"1"		"weapon_crowbar"
+bind	"CAPSLOCK"		"weapon_357"
+bind	"c"		"weapon_9mmAR"
+bind	"2"		"weapon_9mmhandgun"
+bind	"t"		"weapon_tripmine"
+bind	"4"		"weapon_hornetgun"
+bind	"5"		"weapon_handgrenade"
+
+//message binds//
+/////////////////
+
+bind	"ENTER"		"messagemode"
+bind	"BACKSPACE"	"messagemode2"
+bind "j"                "say :)"
+bind	"TAB"		"+showscores"
+bind "g" "say_team ^1TaKe ^3[^2%w^3]^0;drop;play_team misc/talk.wav"
+
+//mouse settings//
+
++mlook
+lookspring		"0"
+lookstrafe		"0"
+m_filter		"0"
+m_rawinput		"1"
+sensitivity		"3"
+zoom_sensitivity_ratio	"1.15"
+
+//net settings//
+////////////////
+
+cl_allowdownload	"1"
+cl_allowupload		"1"
+cl_clockreset		"0.1"
+cl_cmdbackup		"0"
+cl_cmdrate		"100"
+cl_dlmax		"1024"
+cl_download_ingame	"1"
+cl_fixtimerate		"7.5"
+cl_gaitestimation	"1"
+cl_lc			"1"
+cl_lw			"1"
+cl_nosmooth		"1"
+cl_resend		"1.5"
+cl_smoothtime		"0"
+cl_timeout		"300"
+cl_updaterate		"100"
+cl_vsmoothing		"0.0"
+ex_interp		"0.05"
+fs_lazy_precache	"0"
+fps_max			"144"
+fps_override		"1"
+graphheight		"1098"
+hpk_maxsize		"0"
+net_graph		"0"
+net_graphpos		"2"
+net_scale		"5"
+rate			"100000"
+
+//______________
+////////////////
+
+cl_autowepswitch	"1"
+console			"1"
+crosshair		"1"
+default_fov		"100"
+r_drawviewmodel		"1"
+
+
+//______________
+////////////////
+//gfx settings//
+////////////////
+
+ati_npatch		"1"
+bitmapfonts		"1"
+brightness		"3"
+developer		"0"
+direct			"0.9"
+gamma			"3"
+gl_affinemodels		"0"
+gl_alphamin		"0.25"
+gl_clear		"1"
+gl_cull			"1"
+gl_dither		"0"
+gl_flipmatrix		"0"
+gl_fog			"0"
+gl_keeptjunctions	"1"
+gl_lightholes		"1"
+gl_max_size		"512"
+gl_monolights		"0"
+gl_overbright		"0"
+gl_picmip		"0"
+gl_polyoffset		"-0.001"
+gl_round_down		"0"
+gl_spriteblend		"0"
+gl_texturemode		"gl_linear_mipmap_linear"
+gl_vsync		"0"
+gl_zmax			"4096"
+lambert			"1.5"
+lightgamma		"1.81"
+mp_decals		"0"
+r_bmodelinterp		"0"
+r_cachestudio		"1"
+r_decals		"0"
+r_detailtextures	"0"
+r_dynamic		"0"
+r_glowshellfreq		"2.2"
+r_lightmap		"0"
+r_mirroralpha		"1"
+r_mmx			"0"
+r_novis			"0"
+r_traceglow		"0"
+r_wadtextures		"0"
+r_wateralpha		"0"
+texgamma		"1.8"
+v_dark			"0"
+viewsize		"120"
+violence_ablood		"0"
+violence_agibs		"0"
+violence_hblood		"1"
+violence_hgibs		"0"
+
+//________________
+//////////////////
+//sound settings//
+//////////////////
+
+ambient_level		"0.0"
+bgmvolume		"0"
+hisound			"1"
+room_off		"1"
+suitvolume		"0.25"
+voice_enable		"1"
+volume			"0.05"
+waterroom_type		"0"
+
+\\bh0p
+
+alias bh1 "+jump;alias bh@ bh2;special"
+alias bh2 "wait;alias bh@ bh3;special"
+alias bh3 "-jump;alias bh@ bh4;special"
+alias bh4 "wait;alias bh@ bh1;special"
+alias +bhop "alias _special bh@;bh1"
+alias -bhop "alias _special;-jump"
+bind SPACE +bhop
