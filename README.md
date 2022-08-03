@@ -1,5 +1,5 @@
 # ag-configs
-Configs archive for AG
+Archive of configs for AG
 
 ## How can I post my config?
 Just message me on Discord - keyboardcrash#7833
