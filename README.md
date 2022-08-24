@@ -1,5 +1,5 @@
 # ag-configs
-Archive of configs for AG, specially for <a href="https://discord.com/oauth2/authorize?client_id=930511251912671314&guild_id=&scope=bot&permissions=980937982" target="_blank">AG Community</a>
+Archive of configs for AG, specially for <a href="https://agcommunity.ru/" target="_blank">AG Community</a>
 
 ## How can I post my config?
 Just message me on Discord - keyboardcrash#7833
