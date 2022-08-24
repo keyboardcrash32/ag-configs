@@ -6,7 +6,9 @@ Just message me on Discord - keyboardcrash#7833
 
 ## Special thanks to
 Logko - for idea and some configs
+
 ilyushka (AKA Sobaka_Rushaya) - for helping with this repository
+
 Nase - for a bunch configs
 
 ## License
